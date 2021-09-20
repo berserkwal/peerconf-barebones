@@ -40,10 +40,9 @@ const servers = {
         'turns:bn-turn1.xirsys.com:443?transport=tcp',
         'turns:bn-turn1.xirsys.com:5349?transport=tcp',
       ],
-      credential: '526bb800-1a18-11ec-8f39-0242ac140004',
+      credentials: '526bb800-1a18-11ec-8f39-0242ac140004',
     },
   ],
-  iceCandidatePoolSize: 10,
 };
 
 // Global State
