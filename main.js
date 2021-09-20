@@ -30,17 +30,12 @@ const firestore = firebase.firestore();
 const servers = {
   iceServers: [
     {
-      username: '0xvNBi-qJP8pWUVDq9WoCRfi32LkosPxWRTf3QqT_b7TGTUNL6T3oGBTMDsHK8UeAAAAAGFIj05iZXJzZXJrd2Fs',
-      urls: [
-        'stun:bn-turn1.xirsys.com',
-        'turn:bn-turn1.xirsys.com:80?transport=udp',
-        'turn:bn-turn1.xirsys.com:3478?transport=udp',
-        'turn:bn-turn1.xirsys.com:80?transport=tcp',
-        'turn:bn-turn1.xirsys.com:3478?transport=tcp',
-        'turns:bn-turn1.xirsys.com:443?transport=tcp',
-        'turns:bn-turn1.xirsys.com:5349?transport=tcp',
-      ],
-      credential: '526bb800-1a18-11ec-8f39-0242ac140004',
+      urls: ['stun:bn-turn1.xirsys.com'],
+    },
+    {
+      username: 'I2LNcg-QYZrU8p05-2_Wq35pgrQRfyKNU3X_Vp2DC5Any8iMcg4uQsKxtDTgwlylAAAAAGFIlCxiZXJzZXJrd2Fs',
+      credential: '393330fe-1a1b-11ec-b80b-0242ac140004',
+      urls: ['turn:bn-turn1.xirsys.com:80?transport=udp', 'turn:bn-turn1.xirsys.com:3478?transport=udp', 'turn:bn-turn1.xirsys.com:80?transport=tcp', 'turn:bn-turn1.xirsys.com:3478?transport=tcp', 'turns:bn-turn1.xirsys.com:443?transport=tcp', 'turns:bn-turn1.xirsys.com:5349?transport=tcp'],
     },
   ],
 };
