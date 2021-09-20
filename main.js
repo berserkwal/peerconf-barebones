@@ -19,10 +19,28 @@ if (!firebase.apps.length) {
 const firestore = firebase.firestore();
 
 // ICE servers
+// const servers = {
+//   iceServers: [
+//     {
+//       urls: ['stun:stun1.l.google.com:19302', 'stun:stun2.l.google.com:19302'],
+//     },
+//   ],
+//   iceCandidatePoolSize: 10,
+// };
 const servers = {
   iceServers: [
     {
-      urls: ['stun:stun1.l.google.com:19302', 'stun:stun2.l.google.com:19302'],
+      username: '0xvNBi-qJP8pWUVDq9WoCRfi32LkosPxWRTf3QqT_b7TGTUNL6T3oGBTMDsHK8UeAAAAAGFIj05iZXJzZXJrd2Fs',
+      urls: [
+        'stun:bn-turn1.xirsys.com',
+        'turn:bn-turn1.xirsys.com:80?transport=udp',
+        'turn:bn-turn1.xirsys.com:3478?transport=udp',
+        'turn:bn-turn1.xirsys.com:80?transport=tcp',
+        'turn:bn-turn1.xirsys.com:3478?transport=tcp',
+        'turns:bn-turn1.xirsys.com:443?transport=tcp',
+        'turns:bn-turn1.xirsys.com:5349?transport=tcp',
+      ],
+      credential: '526bb800-1a18-11ec-8f39-0242ac140004',
     },
   ],
   iceCandidatePoolSize: 10,
